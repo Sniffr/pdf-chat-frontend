@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import ReactMarkdown from 'react-markdown'
 
 interface Citation {
   page: number
@@ -52,7 +53,9 @@ export default function ChatBubble({ role, content, citations }: ChatBubbleProps
           color: isUser ? '#ffffff' : 'var(--text)',
         }}
       >
-        <p style={{ whiteSpace: 'pre-wrap', lineHeight: '1.5' }}>{content}</p>
+        <div style={{ whiteSpace: 'pre-wrap', lineHeight: '1.5' }}>
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
 
         {!isUser && (
           <div style={{ display: 'flex', gap: '6px', marginTop: '8px' }}>
