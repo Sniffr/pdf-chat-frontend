@@ -193,13 +193,7 @@ export default function ChatWindow({ documentText, documentMeta, onReset }: Chat
               borderRadius: '50%',
               animation: 'bounce 1.4s infinite ease-in-out both 0.32s',
             }} />
-            <style>{`
-              @keyframes bounce {
-                0%, 80%, 100% { transform: scale(0); }
-                40% { transform: scale(1); }
-              }
-            `}</style>
-          </div>
+            </div>
         )}
 
         <div ref={messagesEndRef} />
