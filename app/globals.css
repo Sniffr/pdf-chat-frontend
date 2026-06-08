@@ -1,0 +1,54 @@
+:root {
+  --bg: #f8f9ff;
+  --surface: #ffffff;
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --text: #1e1e2e;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --user-bubble: #6366f1;
+  --ai-bubble: #f1f1f4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: inherit;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  h1 ~ p {
+    font-size: 0.95rem !important;
+  }
+  textarea {
+    overflow-wrap: break-word !important;
+    word-break: break-word;
+  }
+}
