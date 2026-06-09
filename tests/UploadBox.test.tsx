@@ -79,7 +79,7 @@ describe('UploadBox', () => {
 
     expect(screen.getByTestId('upload-box')).toBeInTheDocument()
     expect(screen.getByText(/drag & drop/i)).toBeInTheDocument()
-    expect(screen.getByText(/pdf files only/i)).toBeInTheDocument()
+    expect(screen.getByText(/PDF, DOCX, or PPTX/i)).toBeInTheDocument()
   })
 
   it('calls onExtracted on successful upload', async () => {
